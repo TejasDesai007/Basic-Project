@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
+</head>
+<body style="background-image: url('13_dhans11.jpg')">
+    <h1 style="margin: 0 auto">Candidate Registration</h1>
+    <br>
+    <form method="POST" id="frmRegistration" name="frmRegistration" onsubmit="return validate()">
+        <label for="txtFname">First Name:</label>
+        <input type="text" id="txtFname" name="txtFname" ><br><br>
+        
+        <label for="txtLname">Last Name:</label>
+        <input type="text" id="txtLname" name="txtLname" ><br><br>
+
+        <label for="txtEmail">Email:</label>
+        <input type="text" id="txtEmail" name="txtEmail" ><br><br>
+
+        <label for="txtPhone">Phone:</label>
+        <input type="text" id="txtPhone" name="txtPhone" ><br><br>
+        
+        <label for="slcGender">Gender:</label><br>
+        <select id="slcGender" name="slcGender">
+            <option value="select" selected>Select your gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select><br>
+        <input type="text" id="txtOthGen" name="txtOthGen" style="display: none;">
+        <br>
+
+        <label for="txtPassword">Password:</label>
+        <input type="password" id="txtPassword" name="txtPassword" placeholder="Enter Password" ><br><br>
+
+        <label for="txtConfirmPassword">Confirm Password:</label>
+        <input type="password" id="txtConfirmPassword" name="txtConfirmPassword" placeholder="Confirm Password" ><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
